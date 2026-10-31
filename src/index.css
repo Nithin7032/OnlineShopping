@@ -1,0 +1,40 @@
+:root {
+  --nk-dark: #131a22;
+  --nk-dark-2: #232f3e;
+  --nk-orange: #ff7a00;
+}
+
+body {
+  background-color: #f1f3f6;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+.nk-navbar { background-color: var(--nk-dark); }
+.nk-subbar { background-color: var(--nk-dark-2); }
+.nk-brand { font-size: 1.7rem; font-weight: 700; color: #fff; cursor: pointer; }
+.nk-brand span { color: var(--nk-orange); }
+
+.btn-nk { background-color: var(--nk-orange); color: #fff; border: none; }
+.btn-nk:hover { background-color: #e56d00; color: #fff; }
+
+.nk-hero {
+  background: linear-gradient(120deg, #131a22 0%, #2b3a4f 60%, #ff7a00 140%);
+  color: #fff;
+  border-radius: 12px;
+}
+
+.nk-cat-btn { border-radius: 20px; text-transform: capitalize; }
+.nk-cat-btn.active { background-color: var(--nk-orange); border-color: var(--nk-orange); color: #fff; }
+
+.product-card { transition: transform 0.2s, box-shadow 0.2s; border: none; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+.product-img-box { height: 210px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 16px; cursor: pointer; }
+.product-img-box img { max-height: 100%; max-width: 100%; object-fit: contain; }
+.product-title { font-size: 0.95rem; height: 2.6em; overflow: hidden; }
+.price { color: #b12704; font-weight: 700; font-size: 1.2rem; }
+.stars { color: #ffa41c; }
+
+.cart-img { width: 80px; height: 80px; object-fit: contain; background: #fff; }
+.modal-backdrop-custom { background: rgba(0, 0, 0, 0.55); position: fixed; inset: 0; z-index: 1050; overflow-y: auto; }
+.footer-nk { background-color: var(--nk-dark); color: #ccc; }
+.footer-nk a { color: #ccc; text-decoration: none; }
